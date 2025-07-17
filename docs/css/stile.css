@@ -44,15 +44,7 @@ header {
   position: relative; /* per posizionare logo */
 }
 
-/* Logo posizionato assoluto a sinistra */
-.logo-link {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 1001;
-}
+
 
 .logo-link img {
   height: 50px;
