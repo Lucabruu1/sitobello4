@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti - Luca Francesco Bruno</title>
+  <link rel="stylesheet" href="css/stile.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+
+  <!-- HEADER -->
+<header>
+  <div class="container-header">
+    <a href="pagina1.htm" class="logo-link" aria-label="Torna alla Home">
+      <img src="img/logo.png" alt="Logo Luca Francesco Bruno" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="pagina1.htm" class="active">Home</a></li>
+        <li><a href="pagina2.htm">Progetti</a></li>
+        <li><a href="pagina3.htm">Lavori</a></li>
+        <li><a href="pagina4.htm">Contatti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- CONTENUTO PRINCIPALE -->
+  <main class="main-container">
+    <!-- Testo introduttivo -->
+    <section class="intro">
+      <h2>Contattami</h2>
+      <p>
+        Sono sempre disponibile a collaborazioni, proposte di lavoro o semplicemente a fare due chiacchiere su data analysis e audio engineering.
+      </p>
+      <p>Usa i seguenti metodi per metterti in contatto con me:</p>
+    </section>
+
+    <!-- Card contatti -->
+    <section class="contatti-info">
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:lucafbruno@gmail.com">lucafbruno@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/luca-francesco-bruno" target="_blank" rel="noopener noreferrer">linkedin.com/in/luca-francesco-bruno</a></p>
+      </div>
+      <div class="card">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/lucafbruno" target="_blank" rel="noopener noreferrer">github.com/lucafbruno</a></p>
+      </div>
+    </section>
+
+    <!-- Form contatto -->
+    <section class="form-section">
+      <h3>Oppure inviami un messaggio diretto:</h3>
+      <form action="mailto:lucafbruno@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Il tuo nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="la tua email" required />
+
+        <label for="message">Messaggio:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+
+        <button type="submit" class="btn">Invia</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="pagina1.htm">Home</a>
+      <a href="pagina2.htm">Progetti</a>
+      <a href="pagina3.htm">Lavori</a>
+      <a href="pagina4.htm">Contatti</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
