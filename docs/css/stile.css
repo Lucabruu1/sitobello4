@@ -11,11 +11,11 @@ body {
   background: url('../img/sfondo.png') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
-  color: ;
+  color: #ff6600;
   display: flex;
   flex-direction: column;
-  padding-top: 70px;   /* spazio per header */
-  padding-bottom: 70px; /* spazio per footer */
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 /* Header */
@@ -40,18 +40,26 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center; /* centra tutto */
-  position: relative; /* per posizionare logo */
+  justify-content: center;
+  position: relative;
 }
 
-
+/* Logo */
+.logo-link {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1001;
+}
 
 .logo-link img {
   height: 50px;
   display: block;
 }
 
-/* Nav centrato */
+/* Nav */
 nav {
   flex: 1;
 }
@@ -73,7 +81,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #7b5fcf; /* viola */
+  background-color: #7b5fcf;
   color: white;
 }
 
@@ -134,17 +142,17 @@ main {
   color: #222;
 }
 
-/* Card trasparenti ma testo leggibile */
+/* Card */
 .card {
-  background-color: rgbargba(255, 255, 255, 0.4); /* trasparente chiaro */
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 1.8rem 2rem;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   margin: 1rem auto;
   max-width: 700px;
   text-align: left;
-  color: #ffffff;;
-  backdrop-filter: blur(8px); /* sfondo sfocato sotto la trasparenza */
+  color: #ffffff;
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
@@ -153,14 +161,14 @@ h1 {
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #ffffff;;
+  color: #ffffff;
 }
 
 h2 {
   font-weight: 600;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #ffffff;;
+  color: #ffffff;
 }
 
 /* Paragrafi */
@@ -172,33 +180,7 @@ p {
   margin: 0 auto 1.5rem auto;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .container-header {
-    padding: 0 1rem;
-  }
-  nav ul {
-    gap: 1rem;
-  }
-  main {
-    width: 95%;
-  }
-  .logo-link img {
-    height: 40px;
-  }
-  .card {
-    padding: 1rem 1.2rem;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  nav ul {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
-/* Sezione form */
+/* Form sezione */
 .form-section {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -210,27 +192,24 @@ p {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* Titolo sezione form */
 .form-section h3 {
   color: #ffffffd9;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* Form generale */
+/* Form */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-/* Etichette */
 .contact-form label {
   color: #ffffffcc;
   font-weight: bold;
 }
 
-/* Input e Textarea */
 .contact-form input,
 .contact-form textarea {
   background: rgba(255, 255, 255, 0.1);
@@ -249,7 +228,6 @@ p {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Pulsante Invia */
 .contact-form .btn {
   background-color: #ffffffcc;
   color: #111;
@@ -263,4 +241,118 @@ p {
 
 .contact-form .btn:hover {
   background-color: #ffffff;
+}
+
+/* Responsive tablet */
+@media (max-width: 768px) {
+  .container-header {
+    padding: 0 1rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  .logo-link img {
+    height: 40px;
+  }
+
+  .card {
+    padding: 1rem 1.2rem;
+    max-width: 100%;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 480px) {
+  header, footer {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .container-header {
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .logo-link {
+    left: 10px;
+  }
+
+  .logo-link img {
+    height: 35px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  main {
+    margin: 1.2rem auto;
+    width: 95%;
+  }
+
+  .card {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .form-section {
+    padding: 1.2rem;
+    margin: 1.5rem auto;
+  }
+
+  .form-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-form label {
+    font-size: 0.9rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .contact-form .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
