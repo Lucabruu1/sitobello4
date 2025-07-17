@@ -216,3 +216,9 @@ p {
 .contact-form textarea:focus {
   border-color: #ffffffaa;
   background: rgba(255, 255, 255, 0
+                   }
+@media max-width(640px){
+   .header-content nav ul{
+     gap:0rem;
+   }
+}
