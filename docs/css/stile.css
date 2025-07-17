@@ -1,21 +1,26 @@
 @media (max-width: 480px) {
-  /* HEADER */
-  header {
+  /* Rimuovo fixed per header e footer */
+  header, footer {
+    position: static !important;
     height: auto;
     padding: 15px 10px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-shadow: none;
   }
 
+  /* Header container: colonna centrata */
   .container-header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 15px;
     position: static;
+    max-width: 100%;
   }
 
+  /* Logo */
   .logo-link {
     position: static;
     transform: none;
@@ -26,34 +31,27 @@
     height: 45px;
   }
 
+  /* Menu nav */
   nav ul {
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     padding: 0;
     margin: 0;
   }
 
   nav ul li a {
-    font-size: 1.05rem;
-    padding: 8px 14px;
-    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 10px 16px;
+    border-radius: 10px;
     display: block;
   }
 
-  /* FOOTER */
-  footer {
-    height: auto;
-    padding: 20px 15px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
+  /* Footer container e link */
   .footer-container {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    max-width: 100%;
   }
 
   .footer-links {
@@ -63,27 +61,27 @@
 
   .footer-links a {
     font-size: 1rem;
-    padding: 8px 14px;
-    border-radius: 8px;
+    padding: 10px 16px;
+    border-radius: 10px;
     display: block;
   }
 
-  /* MAIN content spacing */
+  /* Main: aggiungo padding per separazione */
   main {
-    padding-top: 90px;  /* evita overlay con header */
-    padding-bottom: 90px; /* evita overlay con footer */
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 95%;
     margin: 0 auto;
   }
 
-  /* CARD */
+  /* Card */
   .card {
-    padding: 1.2rem;
+    padding: 1.5rem;
     font-size: 1rem;
     max-width: 100%;
   }
 
-  /* FORM */
+  /* Form */
   .form-section {
     padding: 1.5rem;
     margin: 1.5rem auto;
@@ -109,7 +107,7 @@
     padding: 0.75rem;
   }
 
-  /* TITLES */
+  /* Titoli */
   h1 {
     font-size: 2rem;
   }
@@ -118,7 +116,7 @@
     font-size: 1.6rem;
   }
 
-  /* PARAGRAPHS */
+  /* Paragrafi */
   p {
     font-size: 1.1rem;
     line-height: 1.6;
