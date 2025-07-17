@@ -218,11 +218,11 @@ p {
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #ffffffaa;
-  background: rgba(255, 255, 255, 0
+  background: rgba(255, 255, 255, 0);
                    }
 @media (max-width:640px){
    nav ul, .footer-links{
-     gap:0rem;
+     gap: 0rem;
    }
 
   
