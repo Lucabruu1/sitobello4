@@ -1,26 +1,31 @@
 @media (max-width: 480px) {
-  /* Rimuovo fixed per header e footer */
-  header, footer {
-    position: static !important;
+  /* Nascondo la card per prova */
+  .card {
+    display: none;
+  }
+
+  /* Header */
+  header {
+    position: static !important; /* tolgo fixed */
     height: auto;
-    padding: 15px 10px;
-    flex-direction: column;
+    padding: 10px 15px;
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: space-between; /* orizzontale */
+    text-align: left;
     box-shadow: none;
   }
 
-  /* Header container: colonna centrata */
   .container-header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    position: static;
     max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* orizzontale */
+    padding: 0;
+    position: static;
   }
 
-  /* Logo */
   .logo-link {
     position: static;
     transform: none;
@@ -28,93 +33,65 @@
   }
 
   .logo-link img {
-    height: 45px;
+    height: 40px;
   }
 
-  /* Menu nav */
   nav ul {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row; /* orizzontale */
+    gap: 12px;
     padding: 0;
     margin: 0;
+    list-style: none;
+    display: flex;
   }
 
   nav ul li a {
-    font-size: 1.1rem;
-    padding: 10px 16px;
-    border-radius: 10px;
-    display: block;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 6px;
   }
 
-  /* Footer container e link */
-  .footer-container {
-    flex-direction: column;
-    gap: 15px;
+  /* Footer */
+  footer {
+    position: static !important; /* tolgo fixed */
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
     align-items: center;
+    justify-content: center; /* centrato orizzontale */
+    box-shadow: none;
+  }
+
+  .footer-container {
     max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .footer-links {
-    flex-direction: column;
-    gap: 12px;
+    display: flex;
+    gap: 20px;
   }
 
   .footer-links a {
     font-size: 1rem;
-    padding: 10px 16px;
-    border-radius: 10px;
-    display: block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
 
-  /* Main: aggiungo padding per separazione */
+  .footer-links a:hover {
+    background-color: #7b5fcf;
+  }
+
+  /* Main */
   main {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 95%;
     margin: 0 auto;
-  }
-
-  
-
-  /* Form */
-  .form-section {
-    padding: 1.5rem;
-    margin: 1.5rem auto;
-    max-width: 100%;
-  }
-
-  .form-section h3 {
-    font-size: 1.3rem;
-  }
-
-  .contact-form label {
-    font-size: 1rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 1rem;
-    padding: 0.75rem;
-  }
-
-  .contact-form .btn {
-    font-size: 1rem;
-    padding: 0.75rem;
-  }
-
-  /* Titoli */
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  /* Paragrafi */
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 100%;
   }
 }
