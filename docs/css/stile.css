@@ -11,7 +11,7 @@ body {
   background: url('../img/sfondo.png') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
-  color: #ff6600;
+  color: ;
   display: flex;
   flex-direction: column;
   padding-top: 70px;   /* spazio per header */
