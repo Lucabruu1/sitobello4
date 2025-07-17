@@ -218,7 +218,9 @@ p {
   background: rgba(255, 255, 255, 0
                    }
 @media max-width(640px){
-   .header-content nav ul{
+   .header-content nav ul, .footer-links{
      gap:0rem;
    }
+
+  
 }
