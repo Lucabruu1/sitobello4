@@ -76,6 +76,9 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+}
+/*gap Links*/
+nav ul, .footer-links{
   gap: 2rem;
 }
 
@@ -124,7 +127,6 @@ footer {
 
 .footer-links {
   display: flex;
-  gap: 2rem;
 }
 
 .footer-links a {
@@ -219,11 +221,10 @@ p {
 .contact-form textarea:focus {
   border-color: #ffffffaa;
   background: rgba(255, 255, 255, 0);
-                   }
+}
+
 @media (max-width:640px){
    nav ul, .footer-links{
      gap: 0rem;
    }
-
-  
 }
