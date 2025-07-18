@@ -33,6 +33,17 @@ body {
   /* RIMOSSI: height, min-height */
 }
 
+.card a {
+  color: #7b5fcf;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  color: #a88aff;
+}
 /* Header */
 header {
   position: fixed;
