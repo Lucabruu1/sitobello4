@@ -36,8 +36,9 @@ body {
 .card a {
   color: #7b5fcf;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: bold;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .card a:hover {
